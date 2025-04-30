@@ -1,4 +1,4 @@
-# 👋 Hello, I'm Lajos Almási
+# 👋 Hello, I'm Lajos Almasi
 
 Welcome to my data portfolio! I'm learning and working with tools like **Power BI**, **SQL**, and **data visualization**.
 
