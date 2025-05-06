@@ -1,123 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lajos Almási – Data Analyst Portfolio</title>
+  <title>Lajos Almasi | Data Portfolio</title>
   <style>
-    :root {
-      --bg: #f9f9f9;
-      --text: #222;
-      --card: #eef2f7;
-      --accent: #3498db;
-    }
-
-    body.dark-mode {
-      --bg: #1e1e1e;
-      --text: #ddd;
-      --card: #2e2e2e;
-      --accent: #4ea1f3;
-    }
-
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      transition: all 0.3s ease;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f4f1;
+      color: #333;
     }
-
-    .theme-toggle {
-      float: right;
-      cursor: pointer;
-      font-size: 1.2rem;
-      background: none;
-      border: none;
-    }
-
-    h1, h2 {
-      color: var(--text);
-    }
-
-    .section {
-      margin-top: 2rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 1rem;
-      background: var(--card);
-      padding: 1rem;
-      border-left: 4px solid var(--accent);
-    }
-
-    a {
-      text-decoration: none;
-      color: var(--accent);
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--accent);
+    header {
+      background-color: #6f4e37;
       color: white;
-      padding: 2px 8px;
-      margin-left: 10px;
-      font-size: 12px;
-      border-radius: 4px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      color: #6f4e37;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .project {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project a {
+      color: #6f4e37;
+      text-decoration: none;
+    }
+    .project {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+   }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+  <header>
+    <h1>Lajos Almasi</h1>
+    <p>Data Analyst | Power BI | SQL | Dashboard Design</p>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>📊 Projects</h2>
+      <div class="project">
+        <h3>☕ Coffee Sales Dashboard</h3>
+        <p>This report is based on an interactive Power BI dashboard analyzing 12 months of vending machine coffee sales.</p>
+      <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/coffee_sales_dashboard" 
+   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+   target="_blank">
+  🔗 View on GitHub
+  </a>
+  <a href="https://github.com/lajosalmasi/lajos_portfolio/blob/main/coffee_sales_dashboard/Coffee%20Sales%20Dashboard.pdf" 
+   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+   target="_blank">
+  📄 Download PDF
+  </a>
+  <img src="dashboard_screenshot.png" 
+            alt="Coffee Sales Dashboard Screenshot" 
+            style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+    <div class="project">
+      <h3>🚀 UK Startup Founders</h3>
+      <p>This report analyzes the demographic and funding characteristics of startup founders in the UK.</p>
+   <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/uk_startup_founders" 
+   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+   target="_blank">
+  🔗 View on GitHub
+</a>
+<a href="https://github.com/lajosalmasi/lajos_portfolio/blob/main/uk_startup_founders/UK%20Startup%20Founders.pdf" 
+   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+   target="_blank">
+  📄 Download PDF
+</a>
 
-  <h1>👋 Hi, I'm Lajos Almási</h1>
-  <p>As a data analyst, I’m passionate about interpreting, modeling, and presenting data to support smart business decisions.</p>
 
-  <div class="section">
-    <h2>📊 Projects</h2>
-    <ul>
-      <li>
-        <strong>Sales Dashboard with Power BI</strong>
-        <span class="tag">Power BI</span><br/>
-        <a href="https://github.com/lajosalmasi/project1">View on GitHub</a>
-      </li>
-      <li>
-        <strong>SQL Report Automation</strong>
-        <span class="tag">SQL</span><br/>
-        <a href="https://github.com/lajosalmasi/project2">View on GitHub</a>
-      </li>
-      <li>
-        <strong>Excel Model: Cost Analysis</strong>
-        <span class="tag">Excel</span><br/>
-        <a href="https://github.com/lajosalmasi/project3">View on GitHub</a>
-      </li>
-    </ul>
+      <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/uk_startup_founders/uk_startup_founders.png" 
+       alt="UK Startup Founders Dashboard Screenshot" 
+       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+</div>
+
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🔧 Tools & Skills</h2>
+      <ul>
+        <li>Power BI, DAX</li>
+        <li>SQL (PostgreSQL, TablePlus)</li>
+        <li>Data transformation & visualization</li>
+        <li>Interactive dashboard reporting</li>
+      </ul>
+    </div>
   </div>
-
-  <div class="section">
-    <h2>📬 Contact</h2>
-    <p><a href="mailto:morialma1@gmail.com">Send me an email</a></p>
-    <p><a href="https://www.linkedin.com/in/lajosalmasi">LinkedIn Profile</a></p>
-  </div>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark-mode");
-      localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
-    }
-
-    window.onload = () => {
-      if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark-mode");
-      }
-    };
-  </script>
+  <footer>
+      &copy; 2025 Lajos Almási | 
+  <a href="https://linkedin.com/in/lajosalmasi" target="_blank">LinkedIn</a> • 
+  <a href="https://github.com/lajosalmasi/lajos_portfolio/" target="_blank">GitHub</a>
+  </footer>
 </body>
 </html>
