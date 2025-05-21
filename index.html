@@ -40,25 +40,20 @@
       padding-bottom: 5px;
     }
     .project {
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid #ddd;
-      background: #fff;
-    }
-    .project h3 {
-      margin-top: 0;
-    }
-    .project a {
-      color: #6f4e37;
-      text-decoration: none;
-    }
-    .project {
-      margin-top: 10px;
-      padding: 10px;
+      margin-top: 20px;
+      padding: 20px;
       border: 1px solid #ddd;
       background: #fff;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .project a {
+      color: #6f4e37;
+      text-decoration: none;
     }
     footer {
       text-align: center;
@@ -66,162 +61,180 @@
       font-size: 0.9rem;
       color: #666;
     }
-  </style>
-<style>
-  .dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  .dark-mode header {
-    background-color: #333;
-    color: #fff;
-  }
-  .dark-mode .project {
-    background-color: #1e1e1e;
-    border-color: #444;
-  }
-  .dark-mode a {
-    color: #d7cfc7;
-  }
-  .dark-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #a1866f;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-</style>
-<script>
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('theme', mode);
-  }
-
-  window.onload = () => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-mode');
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
     }
-  }
-</script>
+    .dark-mode header {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark-mode .project {
+      background-color: #1e1e1e;
+      border-color: #444;
+    }
+    .dark-mode a {
+      color: #d7cfc7;
+    }
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #a1866f;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', mode);
+    }
 
+    window.onload = () => {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    }
+  </script>
 </head>
 <body>
-  <header><div class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
+  <header>
+    <div class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
     <h1>Lajos Almasi</h1>
     <p>Data Analyst | Power BI | SQL | Dashboard Design</p>
   </header>
+  
   <div class="container">
     <div class="section">
       <h2>📊 Projects</h2>
+      
+      <!-- Netflix Project -->
       <div class="project">
-	  
-	   <h2>📄 Netflix Global Content Analysis</h2>
-<p>
-  This report analyzes 8,000+ Netflix titles across movies and TV shows, revealing genre trends, production hotspots, and audience patterns.
-</p>
+        <h3>📄 Netflix Global Content Analysis</h3>
+        <p>
+          This report analyzes 8,000+ Netflix titles across movies and TV shows, revealing genre trends, production hotspots, and audience patterns.
+        </p>
 
-<a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/netflix_content_analysis_report" 
-   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;"
-   target="_blank">
-  🔗 View on GitHub
-</a>
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/netflix_content_analysis_report" 
+           style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;"
+           target="_blank">
+          🔗 View on GitHub
+        </a>
 
-<a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/netflix_content_analysis_report/Netflix_Content_Analysis_Report.pdf" 
-   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;"
-   download="Netflix_Content_Analysis_Report.pdf">
-  📄 Download PDF
-</a>
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/netflix_content_analysis_report/Netflix_Content_Analysis_Report.pdf" 
+           style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;"
+           download="Netflix_Content_Analysis_Report.pdf">
+          📄 Download PDF
+        </a>
 
-  <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/netflix_content_analysis_report/dashboard_screenshot2.png" 
-       alt="Netflix Global Content Analysis Screenshot" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />     
-</div>
-
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/netflix_content_analysis_report/dashboard_screenshot2.png" 
+             alt="Netflix Global Content Analysis Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />     
+      </div>
+      
+      <!-- Coffee Sales Dashboard -->
+      <div class="project">
         <h3>☕ Coffee Sales Dashboard</h3>
         <p>This report is based on an interactive Power BI dashboard analyzing 12 months of vending machine coffee sales.</p>
-      <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/coffee_sales_dashboard" 
-   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
-   target="_blank">
-  🔗 View on GitHub
-  </a>
-  <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/coffee_sales_dashboard/Coffee%20Sales%20Dashboard.pdf" 
-   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
-   download="Coffee_Sales_Dashboard.pdf">
-  📄 Download PDF
-  </a>
-  <img src="dashboard_screenshot.png" 
-            alt="Coffee Sales Dashboard Screenshot" 
-            style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
-    <div class="project">
-	
-	<h3>😊 World Happiness Report</h3>
-      <p>This report analyzes global happiness data using PostgreSQL and TablePlus for data processing, and Power BI for interactive visualization and trend exploration.</p>
-   <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/world_happiness_report" 
-   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
-   target="_blank">
-  🔗 View on GitHub
-</a>
-<a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/world_happiness_report/world_happiness_report.pdf" 
-   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
-   download="world_happiness_report.pdf">
-  📄 Download PDF
-</a>
-      <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/world_happiness_report/Dashboard_screenshot.png" 
-       alt="Dashboard Screenshot" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/coffee_sales_dashboard" 
+           style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+           target="_blank">
+          🔗 View on GitHub
+        </a>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/coffee_sales_dashboard/Coffee%20Sales%20Dashboard.pdf" 
+           style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+           download="Coffee_Sales_Dashboard.pdf">
+          📄 Download PDF
+        </a>
+        
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/coffee_sales_dashboard/dashboard_screenshot.png" 
+             alt="Coffee Sales Dashboard Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+      </div>
+      
+      <!-- World Happiness Report -->
       <div class="project">
-	  
-	   <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/world_happiness_report/Dashboard_screenshot2.png" 
-       alt="Dashboard Screenshot2" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+        <h3>😊 World Happiness Report</h3>
+        <p>This report analyzes global happiness data using PostgreSQL and TablePlus for data processing, and Power BI for interactive visualization and trend exploration.</p>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/world_happiness_report" 
+           style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+           target="_blank">
+          🔗 View on GitHub
+        </a>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/world_happiness_report/world_happiness_report.pdf" 
+           style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+           download="world_happiness_report.pdf">
+          📄 Download PDF
+        </a>
+        
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/world_happiness_report/Dashboard_screenshot.png" 
+             alt="Dashboard Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+             
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/world_happiness_report/Dashboard_screenshot2.png" 
+             alt="Dashboard Screenshot2" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+      </div>
+      
+      <!-- UK Startup Founders -->
       <div class="project">
-	  
-      <h3>🚀 UK Startup Founders</h3>
-      <p>This report analyzes the demographic and funding characteristics of startup founders in the UK.</p>
-   <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/uk_startup_founders" 
-   style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
-   target="_blank">
-  🔗 View on GitHub
-</a>
-<a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/uk_startup_founders/UK%20Startup%20Founders.pdf" 
-   style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
-   download="UK_Startup_Founders.pdf">
-  📄 Download PDF
-</a>
-      <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/uk_startup_founders/uk_startup_founders.png" 
-       alt="UK Startup Founders Dashboard Screenshot" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+        <h3>🚀 UK Startup Founders</h3>
+        <p>This report analyzes the demographic and funding characteristics of startup founders in the UK.</p>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/uk_startup_founders" 
+           style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+           target="_blank">
+          🔗 View on GitHub
+        </a>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/uk_startup_founders/UK%20Startup%20Founders.pdf" 
+           style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+           download="UK_Startup_Founders.pdf">
+          📄 Download PDF
+        </a>
+        
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/uk_startup_founders/uk_startup_founders.png" 
+             alt="UK Startup Founders Dashboard Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+      </div>
+      
+      <!-- Bank Transactions Fraud Detection -->
       <div class="project">
-<div class="project">
-  <h3>📉 Bank Transactions Fraud Detection</h3>
-  <p>This Power BI report uncovers anomalies and suspicious transaction patterns using a public bank transaction dataset. Fraud signals include balance inconsistencies, IP/device shifts, and post-debit balance increases.</p>
-  
-  <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/bank_transactions_fraud_detection" 
-     style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
-     target="_blank">
-    🔗 View on GitHub
-  </a>
+        <h3>📉 Bank Transactions Fraud Detection</h3>
+        <p>This Power BI report uncovers anomalies and suspicious transaction patterns using a public bank transaction dataset. Fraud signals include balance inconsistencies, IP/device shifts, and post-debit balance increases.</p>
+        
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/tree/main/bank_transactions_fraud_detection" 
+           style="background-color:#6f4e37; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; margin-right:10px;" 
+           target="_blank">
+          🔗 View on GitHub
+        </a>
 
-  <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/bank_transactions_fraud_detection/bank_transactions_fraud_detection.pdf" 
-     style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
-     download="Bank_Transactions_Fraud_Detection.pdf">
-    📄 Download PDF
-  </a>
+        <a href="https://github.com/lajosalmasi/lajos_portfolio/raw/main/bank_transactions_fraud_detection/bank_transactions_fraud_detection.pdf" 
+           style="background-color:#a1866f; color:white; padding:10px 15px; border-radius:5px; text-decoration:none;" 
+           download="Bank_Transactions_Fraud_Detection.pdf">
+          📄 Download PDF
+        </a>
 
-  <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/bank_transactions_fraud_detection/Dashboard_screenshot.png" 
-       alt="Bank Transactions Fraud Detection Dashboard Screenshot" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
-  
-  <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/bank_transactions_fraud_detection/Dashboard_screenshot2.png" 
-       alt="Bank Transactions Fraud Detection Dashboard Screenshot" 
-       style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
-
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/bank_transactions_fraud_detection/Dashboard_screenshot.png" 
+             alt="Bank Transactions Fraud Detection Dashboard Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+        
+        <img src="https://raw.githubusercontent.com/lajosalmasi/lajos_portfolio/main/bank_transactions_fraud_detection/Dashboard_screenshot2.png" 
+             alt="Bank Transactions Fraud Detection Dashboard Screenshot" 
+             style="max-width:100%; margin-top:10px; border:1px solid #ccc;" />
+      </div>
+    </div>
+    
     <div class="section">
       <h2>🔧 Tools & Skills</h2>
       <ul>
@@ -230,11 +243,13 @@
         <li>Data transformation & visualization</li>
         <li>Interactive dashboard reporting</li>
       </ul>
-
+    </div>
+  </div>
+  
   <footer>
-      &copy; 2025 Lajos Almási | 
-  <a href="https://linkedin.com/in/lajosalmasi" target="_blank">LinkedIn</a> • 
-  <a href="https://github.com/lajosalmasi/lajos_portfolio/" target="_blank">GitHub</a>
+    &copy; 2025 Lajos Almási | 
+    <a href="https://linkedin.com/in/lajosalmasi" target="_blank">LinkedIn</a> • 
+    <a href="https://github.com/lajosalmasi/lajos_portfolio/" target="_blank">GitHub</a>
   </footer>
 </body>
 </html>
